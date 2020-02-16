@@ -1,0 +1,137 @@
+PS C:\WINDOWS\system32> C:\iDynamics\EnvironmentScripts\DynamicsCEFarm.ps1
+18:19:18|00:00:00|00:00:00.000| Initialization
+18:19:18|00:00:00|00:00:00.049| - Host operating system version: '10.0.18362'
+18:19:18|00:00:00|00:00:00.056| - Creating new lab definition with name 'iDynamics'
+18:19:20|00:00:02|00:00:02.287| - Location of lab definition files will be 'D:\iDynamics\Farm'
+18:19:21|00:00:02|00:00:02.415| - Location of LabSources folder is 'C:\LabSources'
+18:19:21|00:00:02|00:00:00.000| - Auto-adding ISO files
+18:19:21|00:00:02|00:00:00.097|   - found 1 OS images in the cache
+18:19:21|00:00:02|00:00:00.105|   - Scanning 6 files for operating systemsFound 9 OS images.
+18:19:33|00:00:14|00:00:11.920|   - Added 'C:\LabSources\ISOs\en_dynamics_365_version_9_x64_dvd_b5da2e4f.iso'
+18:19:33|00:00:14|00:00:11.938|   - Added 'C:\LabSources\ISOs\en_sql_server_2016_enterprise_with_service_pack_2_x64_dvd_12124051.iso'
+18:19:33|00:00:14|00:00:11.948|   - Added 'C:\LabSources\ISOs\en_windows_10_enterprise_version_1607_updated_jul_2016_x64_dvd_9054264.iso'
+18:19:33|00:00:14|00:00:11.954|   - Added 'C:\LabSources\ISOs\en_windows_server_2012_r2_vl_with_update_x64_dvd_6052766.iso'
+18:19:33|00:00:14|00:00:11.960|   - Added 'C:\LabSources\ISOs\en_windows_server_2016_x64_dvd_9327751.iso'
+18:19:33|00:00:14|00:00:11.964|   - Added 'C:\LabSources\ISOs\VS2019.iso'
+18:19:33|00:00:14|00:00:11.973|   - Done
+18:19:33|00:00:14|00:00:14.442| - Path for VMs specified as 'D:\iDynamics\AutomatedLab-VMs'
+18:19:33|00:00:15|00:00:00.000| - Adding Hyper-V machine definition 'IDY-DC1'     (Roles: RootDC)
+18:19:37|00:00:18|00:00:03.602|   - Done
+18:19:37|00:00:18|00:00:00.000| - Adding Hyper-V machine definition 'IDY-FE01'    (Roles: Routing)
+18:19:37|00:00:19|00:00:00.104|   - Done
+18:19:37|00:00:19|00:00:00.000| - Adding Hyper-V machine definition 'IDY-BE01'   
+18:19:37|00:00:19|00:00:00.111|   - Done
+18:19:37|00:00:19|00:00:00.001| - Adding Hyper-V machine definition 'IDY-AF01'   
+18:19:37|00:00:19|00:00:00.117|   - Done
+18:19:37|00:00:19|00:00:00.000| - Adding Hyper-V machine definition 'IDY-SQL01'  
+18:19:38|00:00:19|00:00:00.109|   - Done
+18:19:38|00:00:19|00:00:00.002| - Adding Hyper-V machine definition 'IDY-SP01'   
+18:19:38|00:00:19|00:00:00.143|   - Done
+18:19:38|00:00:19|00:00:00.000| - Adding Hyper-V machine definition 'IDY-EX01'   
+18:19:38|00:00:19|00:00:00.131|   - Done
+18:19:38|00:00:19|00:00:00.000| - Adding Hyper-V machine definition 'IDY-CLIENT' 
+18:19:38|00:00:19|00:00:00.131|   - Done
+18:19:38|00:00:20|00:00:20.223| Estimated (additional) local drive space needed for all machines: 16 GB
+18:19:39|00:00:20|00:00:20.754| Location of Hyper-V machines will be 'D:\iDynamics\AutomatedLab-VMs'
+18:19:39|00:00:20|00:00:20.981| Done
+18:19:39|00:00:21|00:00:00.000| Validating lab definition
+18:19:51|00:00:32|00:00:11.462| - Could not invoke validator AutomatedLab.UnknownRoleProperties
+18:19:51|00:00:33|00:00:11.789| - Issue: 'Lab0'. Cause: There is already a virtual switch with the same name but a different switch type
+18:19:51|00:00:33|00:00:11.796| - Issue: 'Default Switch'. Cause: There is already a virtual switch with the same name but a different switch type
+18:19:51|00:00:33|00:00:11.809| - Success
+18:19:51|00:00:33|00:00:00.000| Lab 'iDynamics' hosted on 'HyperV' imported with 8 machines
+18:19:52|00:00:33|00:00:00.000| Creating virtual networks
+18:19:52|00:00:33|00:00:00.007| - Creating Hyper-V virtual network 'Lab0'
+18:19:52|00:00:33|00:00:00.026|   - The network switch 'Lab0' already exists, no changes will be made to configuration
+18:19:52|00:00:33|00:00:00.001|   - Creating Hyper-V virtual network 'Default Switch'
+18:19:52|00:00:33|00:00:00.016|     - The network switch 'Default Switch' already exists, no changes will be made to configuration
+18:19:52|00:00:33|00:00:00.030|     - Done
+18:19:52|00:00:33|00:00:00.073|   - done
+18:19:52|00:00:33|00:00:00.000|   - Creating base images
+18:19:52|00:00:33|00:00:00.144|     - Scanning ISO file 'en_windows_server_2016_x64_dvd_9327751.iso' files for operating systems...Found 4 OS images.
+18:19:56|00:00:38|00:00:00.000|     - Creating base image for operating system 'Windows Server 2016 Datacenter (Desktop Experience)'.........
+18:22:41|00:03:23|00:02:45.210|       - Finished creating base image
+18:22:42|00:03:23|00:02:49.966|     - Scanning ISO file 'en_windows_10_enterprise_version_1607_updated_jul_2016_x64_dvd_9054264.iso' files for operating systems...Found 1 OS images.
+18:22:43|00:03:25|00:00:00.000|     - Creating base image for operating system 'Windows 10 Enterprise'........
+18:25:12|00:05:54|00:02:28.981|       - Finished creating base image
+18:25:14|00:05:55|00:05:21.943|     - Done
+18:25:14|00:05:55|00:05:22.035|   - done
+18:25:14|00:05:55|00:00:00.000|   - Creating Additional Disks
+18:25:16|00:05:57|00:00:01.788|     - Done
+18:25:16|00:05:57|00:00:00.001|   - Creating VMs
+18:25:16|00:05:57|00:00:00.319|     - The hosts file has been added 16 records. Clean them up using 'Remove-Lab' or manually if needed
+18:25:16|00:05:57|00:00:00.000|     - Creating HyperV machine 'IDY-DC1'.....
+18:25:24|00:06:05|00:00:08.005|       - Done
+18:25:24|00:06:05|00:00:00.000|     - Creating HyperV machine 'IDY-FE01'.....
+18:25:28|00:06:10|00:00:04.285|       - Done
+18:25:28|00:06:10|00:00:00.001|     - Creating HyperV machine 'IDY-BE01'.....
+18:25:32|00:06:13|00:00:03.328|       - Done
+18:25:32|00:06:13|00:00:00.000|     - Creating HyperV machine 'IDY-AF01'.....
+18:25:36|00:06:17|00:00:04.206|       - Done
+18:25:36|00:06:17|00:00:00.000|     - Creating HyperV machine 'IDY-SQL01'.....
+18:25:40|00:06:21|00:00:03.942|       - Done
+18:25:40|00:06:21|00:00:00.000|     - Creating HyperV machine 'IDY-SP01'.....
+18:25:44|00:06:25|00:00:04.278|       - Done
+18:25:44|00:06:25|00:00:00.000|     - Creating HyperV machine 'IDY-EX01'.....
+18:25:49|00:06:30|00:00:04.507|       - Done
+18:25:49|00:06:30|00:00:00.000|     - Creating HyperV machine 'IDY-CLIENT'.....
+18:25:55|00:06:37|00:00:06.853|       - Done
+18:25:55|00:06:37|00:00:00.000|     - Waiting for all machines to finish installing
+18:25:55|00:06:37|00:00:00.007|       - Done
+18:25:56|00:06:37|00:00:40.307|     - Done
+18:25:56|00:06:37|00:00:00.001|   - Installing Root Domain Controllers
+18:25:56|00:06:37|00:00:00.012|     - Machines with RootDC role to be installed: 'IDY-DC1'
+18:25:56|00:06:37|00:00:00.077|     - Waiting for machines to start up....
+18:26:30|00:07:11|00:00:33.986|     - Waiting for Root Domain Controllers to complete installation of Active Directory and restart........done
+18:30:51|00:11:32|00:04:55.194|     - Root Domain Controllers have now restarted. Waiting for Active Directory to start up........
+18:32:15|00:12:57|00:06:19.468|     - Done
+18:32:15|00:12:57|00:00:00.000|   - Configuring routing
+18:32:15|00:12:57|00:00:00.031|     - Waiting for machines with Routing Role to startup...........................
+18:36:34|00:17:15|00:04:18.151|     - Configuring Routing role.......................
+18:40:19|00:21:00|00:08:03.196|     - Waiting for configuration of routing to complete......................
+18:45:07|00:25:48|00:12:51.383|     - Done
+18:45:07|00:25:48|00:00:00.000|   - Starting remaining machines
+18:45:07|00:25:48|00:00:00.005|     - Waiting for machines to start up.................
+18:52:24|00:33:06|00:07:17.589|     - Done
+18:52:25|00:33:06|00:32:32.919|   - ---------------------------------------------------------------------------
+18:52:25|00:33:06|00:32:32.930|   - Setting up the lab took 0 hour, 33 minutes and 6 seconds
+18:52:25|00:33:06|00:32:32.946|   - Lab name is 'iDynamics' and is hosted on 'HyperV'. There are 8 machine(s) and 2 network(s) defined.
+18:52:25|00:33:06|00:32:32.961|   - ----------------------------- Network Summary -----------------------------
+18:52:25|00:33:06|00:32:32.992|   - 
+18:52:25|00:33:06|00:32:33.010|   - Name           AddressSpace    SwitchType AdapterName IssuedIpAddresses
+18:52:25|00:33:06|00:32:33.026|   - ----           ------------    ---------- ----------- -----------------
+18:52:25|00:33:06|00:32:33.037|   - Lab0           192.168.11.0/24   Internal                             8
+18:52:25|00:33:06|00:32:33.047|   - Default Switch                   External Wi-Fi                       0
+18:52:25|00:33:06|00:32:33.060|   - 
+18:52:25|00:33:06|00:32:33.074|   - 
+18:52:25|00:33:06|00:32:33.091|   - ----------------------------- Domain Summary ------------------------------
+18:52:25|00:33:06|00:32:33.132|   - 
+18:52:25|00:33:06|00:32:33.145|   - Name          Administrator Password  RootDomain
+18:52:25|00:33:06|00:32:33.154|   - ----          ------------- --------  ----------
+18:52:25|00:33:06|00:32:33.167|   - idynamics.com Administrator Somepass1           
+18:52:25|00:33:06|00:32:33.176|   - 
+18:52:25|00:33:06|00:32:33.190|   - 
+18:52:25|00:33:06|00:32:33.200|   - ------------------------- Virtual Machine Summary -------------------------
+18:52:25|00:33:06|00:32:33.244|   - 
+18:52:25|00:33:06|00:32:33.257|   - Name       DomainName    IpAddress         Roles     OperatingSystem                                     Local Admin   Password 
+18:52:25|00:33:06|00:32:33.273|   - ----       ----------    ---------         -----     ---------------                                     -----------   -------- 
+18:52:25|00:33:06|00:32:33.281|   - IDY-DC1    idynamics.com {192.168.11.0/24} {RootDC}  Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.289|   - IDY-FE01   idynamics.com {192.168.11.0/24} {Routing} Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.300|   - IDY-BE01   idynamics.com {192.168.11.0/24} {}        Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.307|   - IDY-AF01   idynamics.com {192.168.11.0/24} {}        Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.324|   - IDY-SQL01  idynamics.com {192.168.11.0/24} {}        Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.333|   - IDY-SP01   idynamics.com {192.168.11.0/24} {}        Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.346|   - IDY-EX01   idynamics.com {192.168.11.0/24} {}        Windows Server 2016 Datacenter (Desktop Experience) Administrator Somepass1
+18:52:25|00:33:06|00:32:33.356|   - IDY-CLIENT idynamics.com {192.168.11.0/24} {}        Windows 10 Enterprise                               Administrator Somepass1
+18:52:25|00:33:06|00:32:33.368|   - 
+18:52:25|00:33:06|00:32:33.383|   - 
+18:52:25|00:33:06|00:32:33.394|   - ---------------------------------------------------------------------------
+18:52:25|00:33:06|00:32:33.405|   - Please use the following cmdlets to interact with the machines:
+18:52:25|00:33:07|00:32:33.418|   - - Get-LabVMStatus, Get, Start, Restart, Stop, Wait, Connect, Save-LabVM and Wait-LabVMRestart (some of them provide a Wait switch)
+18:52:25|00:33:07|00:32:33.427|   - - Invoke-LabCommand, Enter-LabPSSession, Install-LabSoftwarePackage and Install-LabWindowsFeature (do not require credentials and
+18:52:25|00:33:07|00:32:33.436|   -   work the same way with Hyper-V and Azure)
+18:52:25|00:33:07|00:32:33.451|   - - Checkpoint-LabVM, Restore-LabVMSnapshot and Get-LabVMSnapshot (only for Hyper-V)
+18:52:25|00:33:07|00:32:33.462|   - - Get-LabInternetFile downloads files from the internet and places them on LabSources (locally or on Azure)
+18:52:25|00:33:07|00:32:33.475|   - ---------------------------------------------------------------------------
+
+PS C:\WINDOWS\system32> 
